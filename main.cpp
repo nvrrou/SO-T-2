@@ -115,8 +115,10 @@ class Heroe{
             auto now = system_clock::now();
             time_t t = system_clock::to_time_t(now);
             tm tm{};
+
             //asumiendo SO linux.
             localtime_r(&t, &tm);
+            
             ostringstream os;
             os << put_time(&tm, "%Y-%m-%d %H:%M:%S");
             return os.str();
@@ -160,7 +162,7 @@ class Heroe{
             for (const auto& p : heroePath)
                 os << "(" << p.first << "," << p.second << ")";
             os << "\n";
-            logLine(os.str(), /*also_console=*/false);
+            logLine(os.str(), false);
         }
 
         void mostrarEstado() {
@@ -175,7 +177,7 @@ class Heroe{
                 os << "(" << p.first << "," << p.second << ")";
             os << "\n\n";
 
-            logLine(os.str(), /*also_console=*/false);
+            logLine(os.str(), false);
         }
 
 
@@ -434,7 +436,7 @@ class Monstruo{
             << "                                      Daño Hecho: " << danioHecho << "\n"
             << "                                      Loop Exec: " << loopExec << "\n"
             << "                                      Posicion: (" << monstruoPosX << ", " << monstruoPosY << ")\n";
-            logLine(os.str(), /*also_console=*/false);
+            logLine(os.str(), false);
         }
 
         void daniar(int reduccion){
@@ -532,7 +534,7 @@ class Monstruo{
             }
 
             os << ".\n";
-            logLine(os.str(), /*also_console=*/false);
+            logLine(os.str(), false);
             return pasos > 0;
         }
 
@@ -582,7 +584,7 @@ class Monstruo{
 
             if (enRango.empty()) {
                 os << "     Ningún héroe detectado en el rango." << endl;
-                logLine(os.str(), /*also_console=*/false);
+                logLine(os.str(), false);
                 return resultado;
             }
 
@@ -592,7 +594,7 @@ class Monstruo{
                 resultado.idHeroe = idx;
                 os << "     Un solo héroe detectado: H#" << idx+1
                 << " en (" << heroes[idx]->getPosX() << "," << heroes[idx]->getPosY() << ")." << endl;
-                logLine(os.str(), /*also_console=*/false);
+                logLine(os.str(), false);
                 return resultado;
             }
 
@@ -621,7 +623,7 @@ class Monstruo{
             << " en (" << resultado.posicion.first << "," << resultado.posicion.second
             << ") con distancia² = " << comp << "." << endl;
 
-            logLine(os.str(), /*also_console=*/false);
+            logLine(os.str(), false);
             return resultado;
         }
 
@@ -641,7 +643,7 @@ class Monstruo{
             << "distancia=" << fixed << setprecision(2) << distancia 
             << " rango=" << monstruoRangoAtaque
             << " -> " << (dentro ? "DENTRO" : "FUERA");
-            logLine(os.str(), /*also_console=*/false);
+            logLine(os.str(), false);
 
             return dentro;
         }
@@ -675,24 +677,24 @@ class Monstruo{
             for (int idx : vecinos) {
                 ostringstream os;
                 os << "Monstruo "<< id+1 << " tratará de avisar a monstruo " << (idx+1) << ".";
-                logLine(os.str(), /*also_console=*/false);
-                monstruos[idx]->logLine(os.str(), /*also_console=*/false);
+                logLine(os.str(), false);
+                monstruos[idx]->logLine(os.str(), false);
 
                 if (monstruos[idx]->lastQ() == pair<int,int> {-1,-1}) {
                     ostringstream os1;
                     os1 << "La queue del monstruo " << (idx+1) << " está vacia.";
-                    logLine(os1.str(), /*also_console=*/false);
+                    logLine(os1.str(), false);
                     //aquí se usa mtx_pasos, arriba tambien para comprobar si está vacia la cola.
                     if (monstruos[idx]->genPasosHacia(ubi_heroe)) {
                         ostringstream os2;
                         os2 << "Avisó a monstruo " << (idx+1)
                         << ": de heroe en (" << ubi_heroe.first << "," << ubi_heroe.second << ").";
-                        logLine(os2.str(), /*also_console=*/false);
+                        logLine(os2.str(), false);
 
                         ostringstream os3;
                         os3 << "Monstruo " << id+1 << " le avisó a monstruo " << (idx+1)
                             << ": de un heroe en (" << ubi_heroe.first << "," << ubi_heroe.second << ").";
-                        monstruos[idx]->logLine(os3.str(), /*also_console=*/false);
+                        monstruos[idx]->logLine(os3.str(), false);
                     }
                 }
             }
@@ -714,17 +716,17 @@ class Monstruo{
                     << " desde (" << monstruoPosX << ", " << monstruoPosY << "),"
                     << " con " << monstruoRangoAtaque << " de rango de visión"
                     << " y le quitó " << monstruoDanioAtaque << " de vida.";
-                    logLine(os.str(), /*also_console=*/false);
+                    logLine(os.str(), false);
                 }
 
                 if(h->getVida() > 0){
                     ostringstream os;
                     os << "Vida restante del héroe " << (h->getID()+1) << ": " << h->getVida();
-                    logLine(os.str(), /*also_console=*/false);
+                    logLine(os.str(), false);
                 } else {
                     ostringstream os;
                     os << "Mató al héroe " << (h->getID()+1) << ".";
-                    logLine(os.str(), /*also_console=*/false);
+                    logLine(os.str(), false);
                 }
             }
             this_thread::sleep_for(0.000001s);
@@ -919,7 +921,7 @@ void* Monstruo:: loop_monstruo(vector<Heroe*>& heroes, vector<Monstruo*> &monstr
                 os << "Detectó héroe " << (heroe_mas_cercano.idHeroe+1)
                    << " en (" << heroe_mas_cercano.posicion.first << ","
                    << heroe_mas_cercano.posicion.second << ").";
-                logLine(os.str(), /*also_console=*/false);
+                logLine(os.str(), false);
             }
 
             alertar(heroe_mas_cercano.posicion,monstruos);
@@ -963,7 +965,7 @@ void* Monstruo:: loop_monstruo(vector<Heroe*>& heroes, vector<Monstruo*> &monstr
         if(cont==0){
             combatiendo=false;
             siguiendo=false;
-            logLine("En estado pasivo (sin detección ni movimientos).", /*also_console=*/false);
+            logLine("En estado pasivo (sin detección ni movimientos).", false);
         }
         
         this_thread::sleep_for(tfinal);
