@@ -62,6 +62,8 @@ LINK REPOSITORIO: https://github.com/nvrrou/SO-T-2
 
 - Los ataques de heroes se hacen 0.0000001 segundos mas rapido que los de los monstruos, sino siempre pierden los heroes. (nerf a monstruos...)
 
+- Durante el trabajo se utilizan solo comandos de sistema pertenecientes a linux, cualquier error que sea por eso... voy a su casa en nombre de Victor Reyes.
+
 - EN CASO DE QUE NO SE VEA EL GRID, UTILIZAR Ctrl + "-" o Cmd + "-". (en terminal o VSC o donde sea ejecutado, si no se puede, usar ejemplos mas chicos...).
   
 
