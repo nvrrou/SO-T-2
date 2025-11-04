@@ -34,7 +34,7 @@
 
 - Si un héroe se encuentra con otro que ya haya finalizado su recorrido, simplemente pasará por encima, y en el grid se mostrará el que tenga un ID menor (se intentó implementar que se vieran ambos o solo el que sigue caminando, pero no hubo tiempo).
 
-- Cada entidad (héroe o monstruo) tiene su propio archivo de log individual (log_heroes/heroe_[id].log y log_monstruos/monstruo_[id].log), donde se registran sus acciones.
+- Cada entidad (héroe o monstruo) tiene su propio archivo de log individual (log_heroes/heroe_[id].log y log_monstruos/monstruo_[id].log), donde se registran sus acciones, se borran al iniciar otra simulacion (los logs no son muy entendibles... al menos a nivel general, fue usado para debugging, pero para entender los paths de cada monstruo o ver movimiento es util).
 
 - El grid se actualiza visualmente dos veces por ciclo, mostrando los estados en colores o símbolos, según la preferencia del usuario.
 
