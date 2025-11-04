@@ -1,3 +1,5 @@
+LINK REPOSITORIO: https://github.com/nvrrou/SO-T-2
+
 ==== INSTRUCCIONES DE USO ====
 
 1. Abrir la carpeta donde haya guardado nuestra tarea (vía cd o el método correspondiente según su sistema operativo —que no es Windows).
@@ -62,4 +64,4 @@
 
 - EN CASO DE QUE NO SE VEA EL GRID, UTILIZAR Ctrl + "-" o Cmd + "-". (en terminal o VSC o donde sea ejecutado, si no se puede, usar ejemplos mas chicos...).
   
-- LINK REPOSITORIO: https://github.com/nvrrou/SO-T-2
+
