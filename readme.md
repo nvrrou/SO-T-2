@@ -16,7 +16,7 @@ LINK REPOSITORIO: https://github.com/nvrrou/SO-T-2
 
 7. Elegir si se borra o se mantiene el grid (recomiendo mantenerlo para ver los ultimos movimientos).
 
-8. Evaluar, con piedad.
+8. Evaluar (con piedad).
 
 ==== FUNCIONAMIENTO DEL CÓDIGO ====
 
