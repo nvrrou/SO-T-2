@@ -1,0 +1,199 @@
+fila_max: 39
+columna_max: 59
+
+# ==========================
+# HEROES
+# ==========================
+
+heroeVida: 220
+heroeDanioAtaque: 25
+heroeRangoAtaque: 3
+heroePosX: 3
+heroePosY: 3
+heroePath: (4,3)(5,3)(6,3)(7,3)(8,3)(9,3)(10,3)(11,3)(12,3)(13,3)(14,3)(15,3)(15,4)(15,5)(15,6)(15,7)(15,8)(15,9)(15,10)(15,11)(15,12)(15,13)(16,13)(17,13)(18,13)(19,13)(20,13)(21,13)(22,13)(23,13)(24,13)(24,14)(24,15)(24,16)(24,17)(24,18)(24,19)(25,19)(26,19)(27,19)(28,19)(29,19)(30,19)(30,20)(30,21)(30,22)(30,23)(30,24)(30,25)(30,26)(30,27)(31,27)(32,27)(33,27)(34,27)(35,27)(36,27)(37,27)(38,27)(39,27)(39,28)(39,29)(39,30)(39,31)(39,32)(39,33)(39,34)(39,35)
+
+heroeVida: 200
+heroeDanioAtaque: 22
+heroeRangoAtaque: 2
+heroePosX: 10
+heroePosY: 5
+heroePath: (11,5)(12,5)(13,5)(14,5)(15,5)(16,5)(17,5)(18,5)(19,5)(20,5)(20,6)(20,7)(20,8)(20,9)(20,10)(20,11)(20,12)(20,13)(20,14)(21,14)(22,14)(23,14)(24,14)(25,14)(26,14)(27,14)(28,14)(28,15)(28,16)(28,17)(28,18)(28,19)(28,20)(28,21)(29,21)(30,21)(31,21)(32,21)(33,21)(34,21)(35,21)(36,21)(36,22)(36,23)(36,24)(36,25)(36,26)(36,27)(36,28)(36,29)
+
+heroeVida: 250
+heroeDanioAtaque: 28
+heroeRangoAtaque: 4
+heroePosX: 5
+heroePosY: 10
+heroePath: (6,10)(7,10)(8,10)(9,10)(10,10)(11,10)(12,10)(13,10)(13,11)(13,12)(13,13)(13,14)(13,15)(13,16)(14,16)(15,16)(16,16)(17,16)(18,16)(19,16)(19,17)(19,18)(19,19)(19,20)(19,21)(19,22)(20,22)(21,22)(22,22)(23,22)(24,22)(25,22)(25,23)(25,24)(25,25)(25,26)(25,27)(25,28)(26,28)(27,28)(28,28)(29,28)(30,28)
+
+# ==========================
+# MONSTRUOS
+# ==========================
+
+monstruoVida: 60
+monstruoDanioAtaque: 10
+monstruoRangoVision: 6
+monstruoRangoAtaque: 1
+monstruoPosX: 12
+monstruoPosY: 6
+
+monstruoVida: 70
+monstruoDanioAtaque: 12
+monstruoRangoVision: 5
+monstruoRangoAtaque: 1
+monstruoPosX: 18
+monstruoPosY: 12
+
+monstruoVida: 80
+monstruoDanioAtaque: 15
+monstruoRangoVision: 7
+monstruoRangoAtaque: 2
+monstruoPosX: 22
+monstruoPosY: 10
+
+monstruoVida: 55
+monstruoDanioAtaque: 9
+monstruoRangoVision: 5
+monstruoRangoAtaque: 1
+monstruoPosX: 28
+monstruoPosY: 14
+
+monstruoVida: 90
+monstruoDanioAtaque: 18
+monstruoRangoVision: 6
+monstruoRangoAtaque: 2
+monstruoPosX: 30
+monstruoPosY: 20
+
+monstruoVida: 65
+monstruoDanioAtaque: 11
+monstruoRangoVision: 6
+monstruoRangoAtaque: 1
+monstruoPosX: 33
+monstruoPosY: 18
+
+monstruoVida: 75
+monstruoDanioAtaque: 13
+monstruoRangoVision: 5
+monstruoRangoAtaque: 2
+monstruoPosX: 36
+monstruoPosY: 22
+
+monstruoVida: 100
+monstruoDanioAtaque: 20
+monstruoRangoVision: 8
+monstruoRangoAtaque: 2
+monstruoPosX: 40
+monstruoPosY: 24
+
+monstruoVida: 50
+monstruoDanioAtaque: 10
+monstruoRangoVision: 4
+monstruoRangoAtaque: 1
+monstruoPosX: 15
+monstruoPosY: 8
+
+monstruoVida: 85
+monstruoDanioAtaque: 16
+monstruoRangoVision: 6
+monstruoRangoAtaque: 2
+monstruoPosX: 26
+monstruoPosY: 9
+
+monstruoVida: 45
+monstruoDanioAtaque: 8
+monstruoRangoVision: 5
+monstruoRangoAtaque: 1
+monstruoPosX: 20
+monstruoPosY: 5
+
+monstruoVida: 110
+monstruoDanioAtaque: 22
+monstruoRangoVision: 7
+monstruoRangoAtaque: 3
+monstruoPosX: 42
+monstruoPosY: 30
+
+monstruoVida: 70
+monstruoDanioAtaque: 12
+monstruoRangoVision: 6
+monstruoRangoAtaque: 1
+monstruoPosX: 45
+monstruoPosY: 28
+
+monstruoVida: 95
+monstruoDanioAtaque: 19
+monstruoRangoVision: 7
+monstruoRangoAtaque: 2
+monstruoPosX: 48
+monstruoPosY: 26
+
+monstruoVida: 60
+monstruoDanioAtaque: 12
+monstruoRangoVision: 5
+monstruoRangoAtaque: 1
+monstruoPosX: 50
+monstruoPosY: 20
+
+monstruoVida: 80
+monstruoDanioAtaque: 14
+monstruoRangoVision: 6
+monstruoRangoAtaque: 2
+monstruoPosX: 52
+monstruoPosY: 18
+
+monstruoVida: 120
+monstruoDanioAtaque: 24
+monstruoRangoVision: 8
+monstruoRangoAtaque: 3
+monstruoPosX: 55
+monstruoPosY: 15
+
+monstruoVida: 65
+monstruoDanioAtaque: 11
+monstruoRangoVision: 5
+monstruoRangoAtaque: 1
+monstruoPosX: 38
+monstruoPosY: 12
+
+monstruoVida: 75
+monstruoDanioAtaque: 13
+monstruoRangoVision: 6
+monstruoRangoAtaque: 2
+monstruoPosX: 24
+monstruoPosY: 28
+
+monstruoVida: 90
+monstruoDanioAtaque: 17
+monstruoRangoVision: 6
+monstruoRangoAtaque: 2
+monstruoPosX: 29
+monstruoPosY: 30
+
+monstruoVida: 55
+monstruoDanioAtaque: 9
+monstruoRangoVision: 5
+monstruoRangoAtaque: 1
+monstruoPosX: 10
+monstruoPosY: 15
+
+monstruoVida: 85
+monstruoDanioAtaque: 16
+monstruoRangoVision: 7
+monstruoRangoAtaque: 2
+monstruoPosX: 14
+monstruoPosY: 18
+
+monstruoVida: 100
+monstruoDanioAtaque: 20
+monstruoRangoVision: 8
+monstruoRangoAtaque: 3
+monstruoPosX: 18
+monstruoPosY: 22
+
+monstruoVida: 70
+monstruoDanioAtaque: 12
+monstruoRangoVision: 5
+monstruoRangoAtaque: 1
+monstruoPosX: 22
+monstruoPosY: 24
