@@ -4,15 +4,17 @@
 
 2. Ejecutar el makefile con el comando "make".
 
-3. Abrir el ejecutable con el comando "make run" o, si no funciona usar "g++ -Wall -Wextra -std=c++17 -pthread main.cpp -o grid_tarea_2_cristobal_maria" y "./grid_tarea_2_cristobal_maria".
+3. En caso de que no funcione usar comando "sudo apt update && sudo apt install build-essential".
 
-4. Elegir la simulación (ejemplo_1, ejemplo_2, ejemplo_3, 15x15 o 30x30).
+4. Abrir el ejecutable con el comando "make run" o, si aun no funciona usar "g++ -Wall -Wextra -std=c++17 -pthread main.cpp -o grid_tarea_2_cristobal_maria" y luego "./grid_tarea_2_cristobal_maria".
 
-5. Elegir la preferencia de simbolización (solo colores o símbolos + colores).
+5. Elegir la simulación (ejemplo_1, ejemplo_2, ejemplo_3, 15x15 o 30x30).
 
-6. Elegir si se borra o se mantiene el grid (recomiendo mantenerlo para ver los ultimos movimientos).
+6. Elegir la preferencia de simbolización (solo colores o símbolos + colores).
 
-7. Evaluar, con piedad.
+7. Elegir si se borra o se mantiene el grid (recomiendo mantenerlo para ver los ultimos movimientos).
+
+8. Evaluar, con piedad.
 
 ==== FUNCIONAMIENTO DEL CÓDIGO ====
 
