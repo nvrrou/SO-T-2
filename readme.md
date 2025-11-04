@@ -4,7 +4,7 @@
 
 2. Ejecutar el makefile con el comando "make".
 
-3. Abrir el ejecutable con el comando "make run" o "g++ -Wall -Wextra -std=c++17 -pthread main.cpp -o grid_tarea_2_cristobal_maria" y "./grid_tarea_2_cristobal_maria".
+3. Abrir el ejecutable con el comando "make run" o, si no funciona usar "g++ -Wall -Wextra -std=c++17 -pthread main.cpp -o grid_tarea_2_cristobal_maria" y "./grid_tarea_2_cristobal_maria".
 
 4. Elegir la simulación (ejemplo_1, ejemplo_2, ejemplo_3, 15x15 o 30x30).
 
